@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  background-color: #f4f1ea;
+  line-height: 1.5;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Khung trò chơi chính */
+.tro-choi {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 48px;
+  gap: 8px;
+  background-color: #ffffff;
+  padding: 24px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+/* Định dạng chung cho các nút bấm và ô nhập */
+.tro-choi button,
+.tro-choi input {
+  border-radius: 10px;
+}
+
+.tro-choi button {
+  padding: 8px;
+  width: 30%;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+/* Hàng nhập liệu */
+.hang-nhap-lieu {
+  display: flex;
+}
+
+.o-nhap-so {
+  margin-right: 5px;
+  width: 55%;
+  padding: 8px;
+  border: 1px solid #ccc;
+}
+
+/* Nút đoán */
+.nut-doan {
+  background-color: lightblue;
+  border: 1px solid lightblue;
+}
+
+.nut-doan:hover {
+  background-color: blue;
+  color: #ffffff;
+}
+
+/* Dòng thông báo */
+.thong-bao {
+  color: red;
+  padding: 8px;
+  background-color: lightyellow;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.thong-bao:empty {
+  display: none;
+}
+
+/* Khu vực hiển thị lượt đoán */
+.khu-vuc-luot-doan {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Các chấm tròn tiến trình */
+.cham {
+  display: inline-block;
+  margin-right: 8px;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: lightgrey;
+}
+
+.cham.da-dung {
+  background-color: blue;
+}
+
+/* Nút chơi lại */
+.nut-choi-lai {
+  color: green;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+}
+
+.nut-choi-lai:hover {
+  color: red;
+  border: 1px solid #ccc;
+}

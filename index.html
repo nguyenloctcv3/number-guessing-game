@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Trò chơi Đoán số</title>
+</head>
+
+<body>
+    <main class="tro-choi">
+        <h1>Đoán số</h1>
+        <p>Máy đang giữ 1 số từ 1 đến 100. Bạn có 7 lượt.</p>
+
+        <!-- Hàng nhập liệu chứa ô nhập và nút bấm đoán -->
+        <div class="hang-nhap-lieu">
+            <input type="number" class="o-nhap-so" min="1" max="100" placeholder="Nhập số của bạn">
+            <button type="button" class="nut-doan">Đoán</button>
+        </div>
+
+        <!-- Dòng thông báo kết quả (chỉ cần 1 class duy nhất) -->
+        <p class="thong-bao"></p>
+
+        <!-- Khu vực hiển thị tiến trình lượt đoán -->
+        <div class="khu-vuc-luot-doan">
+            <div class="cum-cham">
+                <span class="cham"></span>
+                <span class="cham"></span>
+                <span class="cham"></span>
+                <span class="cham"></span>
+                <span class="cham"></span>
+                <span class="cham"></span>
+                <span class="cham"></span>
+            </div>
+            <span class="nhan-luot-doan">Lần đoán 0/7</span>
+        </div>
+
+        <!-- Nút bấm chơi lại -->
+        <button type="button" class="nut-choi-lai">Chơi lại</button>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
